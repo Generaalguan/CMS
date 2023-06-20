@@ -1,5 +1,6 @@
 <?php include "functions.php" ?>
 <?php include "includes/header.php" ?>
+    
 
 	<section class="content">
 
@@ -9,10 +10,12 @@
 			
 			
 		</aside><!--SIDEBAR-->
+	
 
 
 	<article class="main-content col-xs-8">
-
+	
+	
 	
 	<?php  
 
@@ -25,6 +28,24 @@
 		Step 4 - Connect to Database and read data
 
 */
+
+$connection = mysqli_connect('localhost', 'root', '', 'practicallapp7');
+if (!$connection) {
+	die("Database connection failed");
+}
+
+global $connection;
+
+$query = "SELECT * FROM users";
+$result = mysqli_query($connection, $query);
+if (!$result) {
+	die("Query failed" . " " . mysqli_error());
+}
+
+while ($row = mysqli_fetch_assoc($result)) {
+	print_r($row);
+}
+
 	
 	?>
 

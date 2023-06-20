@@ -16,12 +16,12 @@
 
 
 		<?php  
-
-
+		//ik zeg hier dat de text gelijk zit aan = "daze man legt goed uit"
+		$text = "deze man legt heel goed uit";
+		//daard hier onder zeg ik dat de vorige text in h1 moet zijn
+		?><h1><?php echo $text?></h1><?php
 		/* 
-
-		   Step 1:  Use the Echo Function to say hello with html h1 tags embedded
-		   inside php.
+		   Step 1:  Use the Echo Function to say hello with html h1                  tags embedded inside php.
 
 
 		   Step 2: Write a comment above the echo function and explain
@@ -29,11 +29,6 @@
 
 
 		   */
-
-
-
-		
-
 
 		?>
 

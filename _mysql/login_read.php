@@ -1,16 +1,20 @@
-<?php include "db.php";?>
-<?php include "functions.php";?>
+<?php include "db.php"; ?>
+<?php include "functions.php"; ?>
+<?php ?>
 
-<?php include "includes/header.php" ?>
 
-<div class="container">
-    
-    <div class="col-sm-6">
+<?php include "includes/header.php"; ?>
 
-    <pre>
-  <?php readRows(); ?>
-     </pre>
+<body>
+
+    <div class="container">
+        <div class="col-xs-6">
+
+            <pre>
+                <?php readRows(); ?>
+            </pre>
+        </div>
     </div>
 
 
-<?php include "includes/footer.php"?>
+    <?php include "includes/footer.php"; ?>
