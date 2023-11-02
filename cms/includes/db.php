@@ -1,9 +1,9 @@
 <?Php
 
-$db['db_host'] = "localhost";
-$db['db_user'] = "root";
-$db['db_pass'] = "";
-$db['db_name'] = "cms";
+$db['db_host'] = "127.0.0.1";
+$db['db_user'] = "c7250cms";
+$db['db_pass'] = "wBEYHx5!ruWw";
+$db['db_name'] = "c7250makeitrain";
 
 
 foreach ($db as $key => $value) {
